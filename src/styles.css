@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background: #44403c;
+  color: #fff;
+}
+
+.container {
+  width: 1100px;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+input[type=search] {
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  border: 1px solid #44403c;
+  border-radius: 4px;
+}
+
+button {
+  width: 80px;
+  height: 30px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #44403c;
+  border-radius: 4px;
+  background: #f97316;
+  color: #fff;
+}
+
+button:hover {
+  background: #ea580c;
+}
+
+section {
+  height: 100vh;
+}
+
+.weather-background {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clear-day {
+  background-image: url('./img/clear-day.jpg');
+}
+
+.clear-night {
+  background-image: url('./img/clear-night.jpg');
+}
+
+.clouds-day {
+  background-image: url('./img/clouds-day.jpg');
+}
+
+.clouds-night {
+  background-image: url('./img/clouds-night.jpg');
+}
+
+.thunderstorm {
+  background-image: url('./img/thunderstorm.jpg');
+}
+
+.rain {
+  background-image: url('./img/rain.jpg');
+}
+
+.drizzle {
+  background-image: url('./img/rain.jpg');
+}
+
+.snow {
+  background-image: url('./img/snow.jpg');
+}
+
+.display-weather-info {
+  padding: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  background: #44403c;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0.8;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.weather-info .temperature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temperature>div {
+  display: flex;
+  gap: 5px;
+}
+
+.temperature h3 {
+  font-size: 4rem;
+}
+
+.active {
+  color: #f97316;
+}
+
+.metric-unit:hover,
+.imperial-unit:hover {
+  cursor: pointer;
+  color: #f97316;
+}
