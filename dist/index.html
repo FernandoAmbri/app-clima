@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="title">Weather App</h1>
+        <div class="search-area">
+          <form action="#" class="form-search" id="form-search">
+            <input
+              type="search"
+              id="search-weather-input"
+              name="search-weather"
+              required
+              autocomplete="off"
+            />
+            <button
+              type="submit"
+              class="btn-search-weather"
+              id="btn-search-weather"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="weather-background">
+        <div class="display-weather-info">
+          <h2 id="city-name"></h2>
+          <div class="weather-info">
+            <h3 id="weather-main"></h3>
+            <div class="temperature">
+              <img src="" alt="" id="weather-icon" />
+              <div>
+                <h3 id="main-temp"></h3>
+                <div class="toggle-units">
+                  <span class="metric-unit active" id="metric-unit">°C</span>
+                  <span>|</span>
+                  <span class="imperial-unit" id="imperial-unit">°F</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <span>Feels like:</span>
+              <span id="feels-like"></span>
+            </div>
+            <div>
+              <span>Humidity:</span>
+              <span id="humidity"></span>
+            </div>
+            <div>
+              <span>Wind:</span>
+              <span id="wind"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+  </body>
+</html>
