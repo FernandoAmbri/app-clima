@@ -22,7 +22,7 @@ header {
 }
 
 .container {
-  width: 1100px;
+  max-width: 1100px;
   height: inherit;
   margin: 0 auto;
   display: flex;
@@ -144,4 +144,16 @@ section {
 .imperial-unit:hover {
   cursor: pointer;
   color: #f97316;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  header {
+    height: 200px;
+  }
 }
