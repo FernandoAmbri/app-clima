@@ -32,9 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    if (searchInput.value.trim() !== "") {
-      manageWeatherData();
-    }
+    if (searchInput.value.trim()) manageWeatherData();
   });
 
   function success(position) {

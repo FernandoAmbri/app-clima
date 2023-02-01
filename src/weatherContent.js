@@ -71,14 +71,14 @@ function toggleUnits() {
 
   let temp = 0;
   let feelsLikeTemp = 0;
+  temp = Number(mainTemp.textContent);
+  feelsLikeTemp = Number(feelsLike.textContent.split(" ")[0]);
 
   if (
     this.textContent === "°F" &&
     feelsLike.textContent.split(" ")[1] === "°C"
   ) {
-    temp = Number(mainTemp.textContent);
     mainTemp.textContent = convertCelsiusToFarenheit(temp);
-    feelsLikeTemp = Number(feelsLike.textContent.split(" ")[0]);
     feelsLike.textContent = `${convertCelsiusToFarenheit(feelsLikeTemp)} ${
       this.textContent
     }`;
@@ -88,9 +88,7 @@ function toggleUnits() {
     this.textContent === "°C" &&
     feelsLike.textContent.split(" ")[1] === "°F"
   ) {
-    temp = Number(mainTemp.textContent);
     mainTemp.textContent = convertFarenheitToCelsius(temp);
-    feelsLikeTemp = Number(feelsLike.textContent.split(" ")[0]);
     feelsLike.textContent = `${convertFarenheitToCelsius(feelsLikeTemp)} ${
       this.textContent
     }`;
